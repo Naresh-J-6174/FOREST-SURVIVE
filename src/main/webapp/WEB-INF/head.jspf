@@ -1,0 +1,5 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="<%= request.getContextPath() %>/js/style.css">
+<script>var ARCADE_CTX = "<%= request.getContextPath() %>";</script>
+<script src="<%= request.getContextPath() %>/js/arcade.js"></script>

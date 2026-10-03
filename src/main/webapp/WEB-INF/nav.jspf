@@ -1,0 +1,22 @@
+<%
+  String _ctx = request.getContextPath();
+  String _nu = (String) session.getAttribute("username");
+  String _av = "snake";
+  javax.servlet.http.Cookie[] _ck = request.getCookies();      // avatar is stored in a cookie
+  if (_ck != null) for (javax.servlet.http.Cookie _c : _ck) if (_c.getName().equals("avatar")) _av = _c.getValue();
+  String _em = "&#128013;";
+  if (_av.equals("jaguar")) _em = "&#128006;";
+  else if (_av.equals("frog")) _em = "&#128056;";
+  else if (_av.equals("parrot")) _em = "&#129436;";
+  else if (_av.equals("monkey")) _em = "&#128018;";
+%>
+<nav class="amazon-nav">
+  <a href="<%= _ctx %>/index.jsp" class="amazon-brand">ARCADE<span>AMAZON</span></a>
+  <div class="nav-links">
+    <a href="<%= _ctx %>/index.jsp">Hub</a>
+    <a href="<%= _ctx %>/store.jsp">Store</a>
+    <a href="<%= _ctx %>/leaderboard.jsp">Leaderboard</a>
+    <a href="<%= _ctx %>/profile.jsp"><%= _em %> <%= _nu %></a>
+    <a href="<%= _ctx %>/logout" class="logout">Logout</a>
+  </div>
+</nav>
