@@ -1,4 +1,4 @@
-# ArcadeHub - Amazon Edition (Web Technology Lab project, CAT-I and CAT-II)
+# ArcadeHub - Amazon Edition (Web Technology Lab project)
 
 ## What is inside
 | Game | Type | Levels |
